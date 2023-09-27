@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous"><!-- fontawesom cdn link -->
+    <link href="https://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <title>Fresh N Fast</title>
+</head>
+
+<body>
+
+    <!-- Membuat taskbar -->
+    <header id="header" class="header-nav" alt="Logo RevoU">
+        <a href="#header" target="_blank">
+            <img src="assets/logo.png" alt="Logo-RevoU" id="logo">
+        </a>
+        <div class="nav">
+            <a href="#home" target="_self">Home</a>
+            <a href="#ourpackage" target="_self">Our Package</a>
+            <a href="#product" target="_self">Products</a>
+            <a href="#callus" target="_self">Call Us</a>
+        </div>
+    </header>
+
+    <!-- Membuat judul homepage -->
+    <main class="main">
+    <section class="header-section" id="home">
+        <h1>Welcome to Fresh N Fast! 
+            <br><span id="visitor"></span></h1>
+        <p id="caption">Everyday with Best Ingredient</p>
+    </section>
+
+        <section class="main-content">
+
+            <article class="article1">
+                <div id="banner">
+                    <img class="img-slideshow" src="assets/grocerystore.jpg" alt="Grocery Store">
+                    <img class="img-slideshow" src="assets/greens.jpg" alt="Grocery Store">
+                    <img class="img-slideshow" src="assets/fresh.jpg" alt="Grocery Store">
+                    <img class="img-slideshow" src="assets/supermarket.jpg" alt="Grocery Store">
+                    <img class="img-slideshow" src="assets/groceries.jpg" alt="Grocery Store">
+                    <img class="img-slideshow" src="assets/market1.jpg" alt="Grocery Store">
+                    <img class="img-slideshow" src="assets/grocery.jpeg" alt="Grocery Store">
+                    <img class="img-slideshow" src="assets/veggies.jpg" alt="Grocery Store">
+                    <br>
+                </div>
+
+                <div class="review">
+                    <p id="quote1">"Setiap hari beli sayur dan buah yang fresh disini"</p>
+                
+                    <img src="assets/testi.jpg" id="testi1" alt="Testimoni">
+                    
+                    <h4 id="testiTitle">Florence Hughes</h4 >
+                    <p id="quote2">Ibu Rumah Tangga, 28</p>
+                </div>
+                
+                <p id="shortBorder"> </p>
+                
+                <div class="benefit-list">
+                    <h4 id="benefit">Mengapa harus berbelanja dengan Fresh N Fast?</h4>
+                    <p class="benefitList"><span class="number">1.</span>
+                        Dapatkan produk yang fresh langsung dari petani lokal pilihan.</p>
+                    <p class="benefitList"><span class="number">2.</span>
+                        Produk kualitas impor dan bersertifikat BPOM RI.</p>
+                    <p class="benefitList"><span class="number">3.</span>
+                        Banyak promo menarik dengan harga terjangkau.</p>
+                    <p class="benefitList"><span class="number">4.</span>
+                        Pengiriman cepat dan tersedia 24 jam.</p>
+                    <p class="benefitList"><span class="number">5.</span>
+                        Dikirim instan oleh kurir terlatih sesuai dengan SOP.</p>
+                    <p class="benefitList"><span class="number">6.</span>
+                        Barang dipilih oleh <i>Personal Shopper</i> Profesional</p>
+                    <p class="benefitList"><span class="number">7.</span>
+                        Tidak perlu datang ke pasar/toko swalayan terdekat.</p>
+                    <p class="benefitList"><span class="number">8.</span>
+                        Beragam metode pembayaran yang aman.</p>
+                    <p class="benefitList"><span class="number">9.</span>
+                        Semua yang kamu perlukan tersedia dari handphone-mu.</p>
+                </div>
+            </article>
+
+            <section id="form" class="form">
+                <h3 id="titleSubtitle">Contact Us</h3>
+                
+                <p id="caption1">Sales akan menghubungi Anda dalam kurun waktu 1x24 jam setelah data kami terima.</p>
+                
+                <form class="message-form" name="message-form" onsubmit="return validateForm()">
+                    <label for="name">Your Name:</label><br>    
+                    <input placeholder="First and last name" name="name" type="text">
+                    
+                    <label for="email">Email Address:</label><br>
+                    <input placeholder="example@gmail.com" name="email" type="email">
+
+                    <label for="phone">Phone Number:</label><br>
+                    <input placeholder="+62 812-3456-7890" name="phone" type="text">
+                    
+                    <label for="interested">What are you interested in?</label><br>
+                    <input placeholder="Select option" name="interested" list="interested">
+                        <datalist id="interested">
+                            <option value="Fresh Fruit">
+                            <option value="Fresh Vegetable">
+                            <option value="Kitchen Ingredient">
+                            <option value="Kitchen Set">
+                        </datalist>
+
+                    <label for="messages">Messages:</label><br>
+                    <textarea placeholder="Your messages here" name="messages"></textarea>
+                                        
+                    <input id="submit" type="submit" value="SEND">                    
+                </form>
+            </section>
+        </section>
+
+        <!-- Membuat halaman Our Packages -->
+        <section id="ourpackage" class="ourPackage">
+            <h1>Our Package</h1>
+        </section>
+
+        <section>
+            <section class="package1">    
+                <div class="div1">
+                    <h2>Fresh Vegetable</h2>
+                    <img id="img1" src="assets/veggie1.jpg" alt="Fresh Vegetables">
+                    <p>"Sayuran segar pilihan yang dipanen langsung dari sumber pertanian terbaik."</p>
+                </div>
+                
+                <div class="div1">
+                    <h2>Fresh Fruits</h2>
+                    <img id="img2" src="assets/fruit1.jpg" alt="Fresh Fruits">
+                    <p>"Buah dengan kualitas terbaik dari pertani lokal dan impor dengan harga yang menarik."</p>
+                </div>
+                
+                <div class="div1">
+                    <h2>Instant Delivery</h2>
+                    <img id="img3" src="assets/delivery1.png" alt="Instant Delivery">
+                    <p>"Dikirim instan oleh kurir terlatih dengan SOP untuk menjaga kondisi belanja kamu."</p>
+                </div>
+            </section>
+            
+            <div id="shortBorder2"></div>
+            
+            <section class="package2">
+                <div class="div2">
+                    <h2>Kitchen Ingredient</h2>
+                    <img id="img4" src="assets/kitcheningre.jpg" alt="Kitchen Ingredient">
+                    <p>"Bumbu dapur yang lengkap untuk penuhi semua keperluan memasak kamu."</p>
+                </div>
+            
+                <div class="div2">
+                    <h2>Kitchen Set</h2>
+                    <img id="img5" src="assets/kitchenset.jpg" alt="Kitchen Set">
+                    <p>"Segala jenis peralatan masak elegan yang dapat membantu kamu memasak."</p>
+                </div>
+            
+                <div class="div2">
+                    <h2>Bundling Set</h2>
+                    <img id="img6" src="assets/bundling.png" alt="Bundling Set">
+                    <p>"Bingung mau masak apa? Sudah tersedia paket yang memudahkan memasak di dapurmu."</p>
+                </div>
+            </section>
+        </section>
+
+        <!-- Membuat halaman Product -->
+        <section id="product" class="ourPackage">
+            <h1>Products</h1>
+        </section>
+
+        <div>
+            <ul>
+                <li><span class="productCategory">Daging dan Susu</span></li>
+            </ul>
+        </div>
+
+        <section id="pricing1">
+            <div class="product" id="grocery">
+              <div class="level">Daging Ayam</div>
+              <img src="assets/products/dagingayam.jpeg" alt="Daging Ayam">
+              <h2>Rp 50.000/kg</h2>
+              <p>Daging ayam produk lokal, dijamin fresh, lulus sertifikasi BPOM RI, 100% natural, dan kualitas daging yang padat.</p>
+              <div class="container">
+                <div class="item">
+                  <button class="kurang">-</button>
+                  <span class="angka">0</span>
+                  <button class="tambah">+</button>
+                </div>
+              </div>
+              <button onclick="changeColor1()" class="change-button" id="change1" type="submit" title="select">Select</button>
+            </div>
+  
+            <div class="product" id="grocery">
+              <div class="level">Daging Sapi</div>
+              <img src="assets/products/dagingsapi.jpg" alt="Daging Sapi">
+              <h2>Rp 125.000/kg</h2>
+              <p>Daging sapi asli produk lokal, dijamin fresh, lulus sertifikasi BPOM RI, 100% natural, dan kualitas daging yang padat.</p>
+              <div class="container">
+                <div class="item">
+                  <button class="kurang">-</button>
+                  <span class="angka">0</span>
+                  <button class="tambah">+</button>
+                </div>
+              </div>
+              <button onclick="changeColor2()" class="change-button" id="change2" type="submit" title="select">Select</button>
+            </div>
+  
+            <div class="product" id="grocery">
+              <div class="level">Daging Bebek</div>
+              <img src="assets/products/dagingbebek.jpg" alt="Daging Bebek">
+              <h2>Rp 35.000/kg</h2>
+              <p>Daging bebek produk lokal, dijamin fresh, lulus sertifikasi BPOM RI, 100% natural, dan kualitas daging yang padat.</p>
+              <div class="container">
+                <div class="item">
+                  <button class="kurang">-</button>
+                  <span class="angka">0</span>
+                  <button class="tambah">+</button>
+                </div>
+              </div>
+              <button onclick="changeColor3()" class="change-button" id="change3" type="submit" title="select">Select</button>
+            </div>
+
+            <div class="product" id="grocery">
+              <div class="level">Ikan Kakap</div>
+              <img src="assets/products/ikankakap.jpg" alt="Ikan Kakap">
+              <h2>Rp 70.000/kg</h2>
+              <p>Ikan kakap tangkapan lokal, dijamin fresh, lulus sertifikasi BPOM RI, 100% natural, dan kualitas daging yang padat.</p>
+              <div class="container">
+                <div class="item">
+                  <button class="kurang">-</button>
+                  <span class="angka">0</span>
+                  <button class="tambah">+</button>
+                </div>
+              </div>
+              <button onclick="changeColor4()" class="change-button" id="change4" type="submit" title="select">Select</button>
+            </div>
+          </section>
+
+          <section id="pricing2">
+            <div class="product" id="grocery">
+              <div class="level">Ikan Tongkol</div>
+              <img src="assets/products/ikantongkol.jpg" alt="Ikan Tongkol">
+              <h2>Rp 40.000/kg</h2>
+              <p>Ikan tongkol tangkapan lokal, dijamin fresh, lulus sertifikasi BPOM RI, 100% natural, dan kualitas daging yang padat.</p>
+              <div class="container">
+                <div class="item">
+                  <button class="kurang">-</button>
+                  <span class="angka">0</span>
+                  <button class="tambah">+</button>
+                </div>
+              </div>
+              <button onclick="changeColor5()" class="change-button" id="change5" type="submit" title="select">Select</button>
+            </div>
+  
+            <div class="product" id="grocery">
+              <div class="level">Ikan Tenggiri</div>
+              <img src="assets/products/ikantenggiri.jpg" alt="Ikan Tenggiri">
+              <h2>Rp 75.000/kg</h2>
+              <p>Ikan tenggiri tangkapan lokal, dijamin fresh, lulus sertifikasi BPOM RI, 100% natural, dan kualitas daging yang padat.</p>
+              <div class="container">
+                <div class="item">
+                  <button class="kurang">-</button>
+                  <span class="angka">0</span>
+                  <button class="tambah">+</button>
+                </div>
+              </div>
+              <button onclick="changeColor6()" class="change-button" id="change6" type="submit" title="select">Select</button>
+            </div>
+  
+            <div class="product" id="grocery">
+              <div class="level">Susu</div>
+              <img src="assets/products/susu.jpg" alt="Ikan Kakap">
+              <h2>Rp 20.000/liter</h2>
+              <p>Susu dari peternak lokal, dijamin fresh, lulus sertifikasi BPOM RI, 100% natural, dan kualitas daging yang padat.</p>
+              <div class="container">
+                <div class="item">
+                  <button class="kurang">-</button>
+                  <span class="angka">0</span>
+                  <button class="tambah">+</button>
+                </div>
+              </div>
+              <button onclick="changeColor7()" class="change-button" id="change7" type="submit" title="select">Select</button>
+            </div>
+          </section>
+
+          <div>
+            <ul>
+                <li><span class="productCategory">Sayur-sayuran</span></li>
+            </ul>
+          </div>
+
+          <section id="pricing3">
+            <div class="product" id="grocery">
+              <div class="level">Bayam</div>
+              <img src="assets/products/bayam.jpg" alt="Bayam">
+              <h2>Rp 5.000/ikat</h2>
+              <p>Bayam organik produksi lokal, dijamin fresh, tanpa pestisida, 100% natural, dan bersertifikat BPOM RI.</p>
+              <div class="container">
+                <div class="item">
+                  <button class="kurang">-</button>
+                  <span class="angka">0</span>
+                  <button class="tambah">+</button>
+                </div>
+              </div>
+              <button onclick="changeColor8()" class="change-button" id="change8" type="submit" title="select">Select</button>
+            </div>
+  
+            <div class="product" id="grocery">
+              <div class="level">Selada</div>
+              <img src="assets/products/selada.png" alt="Selada">
+              <h2>Rp 10.000/ikat</h2>
+              <p>Selada organik produksi lokal, dijamin fresh, tanpa pestisida, 100% natural, dan bersertifikat BPOM RI.</p>
+              <div class="container">
+                <div class="item">
+                  <button class="kurang">-</button>
+                  <span class="angka">0</span>
+                  <button class="tambah">+</button>
+                </div>
+              </div>
+              <button onclick="changeColor9()" class="change-button" id="change9" type="submit" title="select">Select</button>
+            </div>
+  
+            <div class="product" id="grocery">
+              <div class="level">Terong</div>
+              <img src="assets/products/terong.jpg" alt="Terong">
+              <h2>Rp 12.000/kg</h2>
+              <p>Terong organik produksi lokal, dijamin fresh, tanpa pestisida, 100% natural, dan bersertifikat BPOM RI.</p>
+              <div class="container">
+                <div class="item">
+                  <button class="kurang">-</button>
+                  <span class="angka">0</span>
+                  <button class="tambah">+</button>
+                </div>
+              </div>
+              <button onclick="changeColor10()" class="change-button" id="change10" type="submit" title="select">Select</button>
+            </div>
+
+            <div class="product" id="grocery">
+              <div class="level">Kentang</div>
+              <img src="assets/products/kentang.jpg" alt="Kentang">
+              <h2>Rp 25.000/kg</h2>
+              <p>Kentang organik produksi lokal, dijamin fresh, tanpa pestisida, 100% natural, dan bersertifikat BPOM RI.</p>
+              <div class="container">
+                <div class="item">
+                  <button class="kurang">-</button>
+                  <span class="angka">0</span>
+                  <button class="tambah">+</button>
+                </div>
+              </div>
+              <button onclick="changeColor11()" class="change-button" id="change11" type="submit" title="select">Select</button>
+            </div>
+          </section>
+
+          <section id="pricing4">
+            <div class="product" id="grocery">
+              <div class="level">Wortel</div>
+              <img src="assets/products/wortel.jpg" alt="Wortel">
+              <h2>Rp 10.000/kg</h2>
+              <p>Wortel organik produksi lokal, dijamin fresh, tanpa pestisida, 100% natural, dan bersertifikat BPOM RI.</p>
+              <div class="container">
+                <div class="item">
+                  <button class="kurang">-</button>
+                  <span class="angka">0</span>
+                  <button class="tambah">+</button>
+                </div>
+              </div>
+              <button onclick="changeColor12()" class="change-button" id="change12" type="submit" title="select">Select</button>
+            </div>
+  
+            <div class="product" id="grocery">
+              <div class="level">Tomat</div>
+              <img src="assets/products/tomat.jpg" alt="Tomat">
+              <h2>Rp 8.000/kg</h2>
+              <p>Tomat organik produksi lokal, dijamin fresh, tanpa pestisida, 100% natural, dan bersertifikat BPOM RI.</p>
+              <div class="container">
+                <div class="item">
+                  <button class="kurang">-</button>
+                  <span class="angka">0</span>
+                  <button class="tambah">+</button>
+                </div>
+              </div>
+              <button onclick="changeColor13()" class="change-button" id="change13" type="submit" title="select">Select</button>
+            </div>
+  
+            <div class="product" id="grocery">
+              <div class="level">Bawang Putih</div>
+              <img src="assets/products/bawangputih.jpg" alt="Bawang Putih">
+              <h2>Rp 35.000/kg</h2>
+              <p>Bawang putih organik produksi lokal, dijamin fresh, tanpa pestisida, 100% natural, dan bersertifikat BPOM RI.</p>
+              <div class="container">
+                <div class="item">
+                  <button class="kurang">-</button>
+                  <span class="angka">0</span>
+                  <button class="tambah">+</button>
+                </div>
+              </div>
+              <button onclick="changeColor14()" class="change-button" id="change14" type="submit" title="select">Select</button>
+            </div>
+
+            <div class="product" id="grocery">
+              <div class="level">Bawang Merah</div>
+              <img src="assets/products/bawangmerah.jpg" alt="Bawang Merah">
+              <h2>Rp 40.000/kg</h2>
+              <p>Bawang merah organik produksi lokal, dijamin fresh, tanpa pestisida, 100% natural, dan bersertifikat BPOM RI.</p>
+              <div class="container">
+                <div class="item">
+                  <button class="kurang">-</button>
+                  <span class="angka">0</span>
+                  <button class="tambah">+</button>
+                </div>
+              </div>
+              <button onclick="changeColor15()" class="change-button" id="change15" type="submit" title="select">Select</button>
+            </div>
+          </section>
+
+          <section id="pricing5">
+            <div class="product" id="grocery">
+              <div class="level">Jamur Merang</div>
+              <img src="assets/products/jamurmerang.jpg" alt="Jamur Merang">
+              <h2>Rp 25.000/kg</h2>
+              <p>Jamur merang organik produksi lokal, dijamin fresh, tanpa pestisida, 100% natural, dan bersertifikat BPOM RI.</p>
+              <div class="container">
+                <div class="item">
+                  <button class="kurang">-</button>
+                  <span class="angka">0</span>
+                  <button class="tambah">+</button>
+                </div>
+              </div>
+              <button onclick="changeColor16()" class="change-button" id="change16" type="submit" title="select">Select</button>
+            </div>
+  
+            <div class="product" id="grocery">
+              <div class="level">Jagung</div>
+              <img src="assets/products/jagung.jpg" alt="Jagung">
+              <h2>Rp 35.000/kg</h2>
+              <p>Jagung organik produksi lokal, dijamin fresh, tanpa pestisida, 100% natural, dan bersertifikat BPOM RI.</p>
+              <div class="container">
+                <div class="item">
+                  <button class="kurang">-</button>
+                  <span class="angka">0</span>
+                  <button class="tambah">+</button>
+                </div>
+              </div>
+              <button onclick="changeColor17()" class="change-button" id="change17" type="submit" title="select">Select</button>
+            </div>
+  
+            <div class="product" id="grocery">
+              <div class="level">Paprika</div>
+              <img src="assets/products/paprika.jpg" alt="Paprika">
+              <h2>Rp 45.000/kg</h2>
+              <p>Paprika organik produksi lokal, dijamin fresh, tanpa pestisida, 100% natural, dan bersertifikat BPOM RI.</p>
+              <div class="container">
+                <div class="item">
+                  <button class="kurang">-</button>
+                  <span class="angka">0</span>
+                  <button class="tambah">+</button>
+                </div>
+              </div>
+              <button onclick="changeColor18()" class="change-button" id="change18" type="submit" title="select">Select</button>
+            </div>
+
+            <div class="product" id="grocery">
+              <div class="level">Daun Bawang</div>
+              <img src="assets/products/daunbawang.jpg" alt="Daun Bawang">
+              <h2>Rp 12.000/kg</h2>
+              <p>Daun bawang organik produksi lokal, dijamin fresh, tanpa pestisida, 100% natural, dan bersertifikat BPOM RI.</p>
+              <div class="container">
+                <div class="item">
+                  <button class="kurang">-</button>
+                  <span class="angka">0</span>
+                  <button class="tambah">+</button>
+                </div>
+              </div>
+              <button onclick="changeColor19()" class="change-button" id="change19" type="submit" title="select">Select</button>
+            </div>
+          </section>
+
+          <div>
+            <ul>
+                <li><span class="productCategory">Buah-buahan</span></li>
+            </ul>
+          </div>
+
+          <section id="pricing6">
+            <div class="product" id="menu">
+              <div class="level">Anggur</div>
+              <img src="assets/products/anggur.jpg" alt="Anggur">
+              <h2>Rp 65.000/kg</h2>
+              <p>Anggur organik produksi lokal, dijamin fresh, tanpa pestisida, 100% natural, dan bersertifikat BPOM RI.</p>
+              <div class="container">
+                <div class="item">
+                  <button class="kurang">-</button>
+                  <span class="angka">0</span>
+                  <button class="tambah">+</button>
+                </div>
+              </div>
+              <button onclick="changeColor20()" class="change-button" id="change20" type="submit" title="select">Select</button>
+            </div>
+  
+            <div class="product" id="grocery">
+              <div class="level">Apel</div>
+              <img src="assets/products/apel.jpg" alt="Apel">
+              <h2>Rp 55.000/kg</h2>
+              <p>Apel organik produksi lokal, dijamin fresh, tanpa pestisida, 100% natural, dan bersertifikat BPOM RI.</p>
+              <div class="container">
+                <div class="item">
+                  <button class="kurang">-</button>
+                  <span class="angka">0</span>
+                  <button class="tambah">+</button>
+                </div>
+              </div>
+              <button onclick="changeColor21()" class="change-button" id="change21" type="submit" title="select">Select</button>
+            </div>
+  
+            <div class="product" id="grocery">
+              <div class="level">Alpukat</div>
+              <img src="assets/products/alpukat.jpeg" alt="Alpukat">
+              <h2>Rp 33.000/kg</h2>
+              <p>Alpukat organik produksi lokal, dijamin fresh, tanpa pestisida, 100% natural, dan bersertifikat BPOM RI.</p>
+              <div class="container">
+                <div class="item">
+                  <button class="kurang">-</button>
+                  <span class="angka">0</span>
+                  <button class="tambah">+</button>
+                </div>
+              </div>
+              <button onclick="changeColor22()" class="change-button" id="change22" type="submit" title="select">Select</button>
+            </div>
+
+            <div class="product" id="grocery">
+              <div class="level">Pisang</div>
+              <img src="assets/products/pisang.jpg" alt="Pisang">
+              <h2>Rp 28.000/kg</h2>
+              <p>Pisang organik produksi lokal, dijamin fresh, tanpa pestisida, 100% natural, dan bersertifikat BPOM RI.</p>
+              <div class="container">
+                <div class="item">
+                  <button class="kurang">-</button>
+                  <span class="angka">0</span>
+                  <button class="tambah">+</button>
+                </div>
+              </div>
+              <button onclick="changeColor23()" class="change-button" id="change23" type="submit" title="select">Select</button>
+            </div>
+          </section>
+
+          <section id="pricing7">
+            <div class="product" id="grocery">
+              <div class="level">Jeruk</div>
+              <img src="assets/products/jeruk.jpg" alt="Jeruk">
+              <h2>Rp 25.000/kg</h2>
+              <p>Jeruk organik produksi lokal, dijamin fresh, tanpa pestisida, 100% natural, dan bersertifikat BPOM RI.</p>
+              <div class="container">
+                <div class="item">
+                  <button class="kurang">-</button>
+                  <span class="angka">0</span>
+                  <button class="tambah">+</button>
+                </div>
+              </div>
+              <button onclick="changeColor24()" class="change-button" id="change24" type="submit" title="select">Select</button>
+            </div>
+  
+            <div class="product" id="grocery">
+              <div class="level">Kiwi</div>
+              <img src="assets/products/kiwi.jpg" alt="Kiwi">
+              <h2>Rp 45.000/kg</h2>
+              <p>Kiwi organik produksi lokal, dijamin fresh, tanpa pestisida, 100% natural, dan bersertifikat BPOM RI.</p>
+              <div class="container">
+                <div class="item">
+                  <button class="kurang">-</button>
+                  <span class="angka">0</span>
+                  <button class="tambah">+</button>
+                </div>
+              </div>
+              <button onclick="changeColor25()" class="change-button" id="change25" type="submit" title="select">Select</button>
+            </div>
+  
+            <div class="product" id="grocery">
+              <div class="level">Nanas</div>
+              <img src="assets/products/nanas.png" alt="Nanas">
+              <h2>Rp 32.000/kg</h2>
+              <p>Nanas organik produksi lokal, dijamin fresh, tanpa pestisida, 100% natural, dan bersertifikat BPOM RI.</p>
+              <div class="container">
+                <div class="item">
+                  <button class="kurang">-</button>
+                  <span class="angka">0</span>
+                  <button class="tambah">+</button>
+                </div>
+              </div>
+              <button onclick="changeColor26()" class="change-button" id="change26" type="submit" title="select">Select</button>
+            </div>
+
+            <div class="product" id="grocery">
+              <div class="level">Pir</div>
+              <img src="assets/products/pir.jpg" alt="Pir">
+              <h2>Rp 47.000/kg</h2>
+              <p>Pir organik asli produksi lokal, dijamin fresh, tanpa pestisida, 100% natural, dan bersertifikat BPOM RI.</p>
+              <div class="container">
+                <div class="item">
+                  <button class="kurang">-</button>
+                  <span class="angka">0</span>
+                  <button class="tambah">+</button>
+                </div>
+              </div>
+              <button onclick="changeColor27()" class="change-button" id="change27" type="submit" title="select">Select</button>
+            </div>
+          </section>
+
+          <div>
+            <ul>
+                <li><span class="productCategory">Kitchen Ingredient</span></li>
+            </ul>
+          </div>
+
+          <section id="pricing8">
+            <div class="product" id="grocery">
+              <div class="level">Garam</div>
+              <img src="assets/products/garam.jpg" alt="Garam">
+              <h2>Rp 15.000/kg</h2>
+              <p>Garam organik produksi lokal, kualitas terjamin tanpa bahan kimia berbahaya, 100% natural, dan bersertifikat BPOM RI.</p>
+              <div class="container">
+                <div class="item">
+                  <button class="kurang">-</button>
+                  <span class="angka">0</span>
+                  <button class="tambah">+</button>
+                </div>
+              </div>
+              <button onclick="changeColor28()" class="change-button" id="change28" type="submit" title="select">Select</button>
+            </div>
+  
+            <div class="product" id="grocery">
+              <div class="level">Gula Pasir</div>
+              <img src="assets/products/gulapasir.jpg" alt="Gula Pasir">
+              <h2>Rp 15.000/kg</h2>
+              <p>Gula pasir organik produksi lokal, kualitas terjamin tanpa bahan kimia berbahaya, 100% natural, dan bersertifikat BPOM RI.</p>
+              <div class="container">
+                <div class="item">
+                  <button class="kurang">-</button>
+                  <span class="angka">0</span>
+                  <button class="tambah">+</button>
+                </div>
+              </div>
+              <button onclick="changeColor29()" class="change-button" id="change29" type="submit" title="select">Select</button>
+            </div>
+  
+            <div class="product" id="grocery">
+              <div class="level">Gula Batu</div>
+              <img src="assets/products/gulabatu.jpg" alt="Gula Batu">
+              <h2>Rp 22.000/kg</h2>
+              <p>Gula batu organik produksi lokal, kualitas terjamin tanpa bahan kimia berbahaya, 100% natural, dan bersertifikat BPOM RI.</p>
+              <div class="container">
+                <div class="item">
+                  <button class="kurang">-</button>
+                  <span class="angka">0</span>
+                  <button class="tambah">+</button>
+                </div>
+              </div>
+              <button onclick="changeColor30()"  class="change-button" id="change30" type="submit" title="select">Select</button>
+            </div>
+
+            <div class="product" id="grocery">
+              <div class="level">Gula Merah</div>
+              <img src="assets/products/gulamerah.jpg" alt="Gula Merah">
+              <h2>Rp 18.000/kg</h2>
+              <p>Gula merah organik asli lokal, kualitas terjamin tanpa bahan kimia berbahaya, 100% natural, dan bersertifikat BPOM RI.</p>
+              <div class="container">
+                <div class="item">
+                  <button class="kurang">-</button>
+                  <span class="angka">0</span>
+                  <button class="tambah">+</button>
+                </div>
+              </div>
+              <button onclick="changeColor31()" class="change-button" id="change31" type="submit" title="select">Select</button>
+            </div>
+          </section>
+
+          <section id="pricing9">
+            <div class="product" id="grocery">
+              <div class="level">Minyak Sawit</div>
+              <img src="assets/products/minyaksawit.jpg" alt="Minyak Sawit">
+              <h2>Rp 30.000/liter</h2>
+              <p>Minyak sawit organik asli lokal, kualitas terjamin tanpa bahan kimia berbahaya, 100% natural, dan bersertifikat BPOM RI.</p>
+              <div class="container">
+                <div class="item">
+                  <button class="kurang">-</button>
+                  <span class="angka">0</span>
+                  <button class="tambah">+</button>
+                </div>
+              </div>
+              <button onclick="changeColor32()" class="change-button" id="change32" type="submit" title="select">Select</button>
+            </div>
+  
+            <div class="product" id="grocery">
+              <div class="level">Minyak Zaitun</div>
+              <img src="assets/products/minyakzaitun.jpg" alt="Minyak Zaitun">
+              <h2>Rp 79.000/liter</h2>
+              <p>Minyak zaitun organik asli lokal, kualitas terjamin tanpa bahan kimia berbahaya, 100% natural, dan bersertifikat BPOM RI.</p>
+              <div class="container">
+                <div class="item">
+                  <button class="kurang">-</button>
+                  <span class="angka">0</span>
+                  <button class="tambah">+</button>
+                </div>
+              </div>
+              <button onclick="changeColor33()" class="change-button" id="change33" type="submit" title="select">Select</button>
+            </div>
+  
+            <div class="product" id="grocery">
+              <div class="level">Micin</div>
+              <img src="assets/products/micin.jpg" alt="Micin">
+              <h2>Rp 22.000/kg</h2>
+              <p>Gula batu organik produksi lokal, kualitas terjamin tanpa bahan kimia berbahaya, 100% natural, dan bersertifikat BPOM RI.</p>
+              <div class="container">
+                <div class="item">
+                  <button class="kurang">-</button>
+                  <span class="angka">0</span>
+                  <button class="tambah">+</button>
+                </div>
+              </div>
+              <button onclick="changeColor34()" id="change34" class="change-button" id="change34" type="submit" title="select">Select</button>
+            </div>
+          </section>
+
+          <div>
+            <ul>
+                <li><span class="productCategory">Bundle Set</span></li>
+            </ul>
+          </div>
+
+          <section id="pricing10">
+            <div class="product" id="grocery">
+              <div class="level">Bundle Buah & Sayur A</div>
+              <img src="assets/products/bundlebuahsayur1.jpg" alt="Bundle Buah & Sayur A">
+              <h2>Rp 128.000/kg</h2>
+              <p>Berisi paket buah-buahan dan sayur-sayuran dengan komposisi vitamin dan mineral yang lengkap, sudah tersedia dalam satu pilihan.</p>
+              <div class="container">
+                <div class="item">
+                  <button class="kurang">-</button>
+                  <span class="angka">0</span>
+                  <button class="tambah">+</button>
+                </div>
+              </div>
+              <button onclick="changeColor35()" id="change35" class="change-button" id="change35" type="submit" title="select">Select</button>
+            </div>
+  
+            <div class="product" id="grocery">
+              <div class="level">Bundle Buah & Sayur B</div>
+              <img src="assets/products/bundlebuahsayur2.jpg" alt="Bundle Buah & Sayur B">
+              <h2>Rp 130.000/kg</h2>
+              <p>Berisi paket buah-buahan dan sayur-sayuran dengan komposisi vitamin dan mineral yang lengkap, sudah tersedia dalam satu pilihan.</p>
+              <div class="container">
+                <div class="item">
+                  <button class="kurang">-</button>
+                  <span class="angka">0</span>
+                  <button class="tambah">+</button>
+                </div>
+              </div>
+              <button onclick="changeColor36()" id="change36" class="change-button" id="change36" type="submit" title="select">Select</button>
+            </div>
+  
+            <div class="product" id="grocery">
+              <div class="level">Bundle Complete A</div>
+              <img src="assets/products/bundlekomplit1.jpg" alt="Bundle Complete A">
+              <h2>Rp 275.000/kg</h2>
+              <p>Berisi paket complete: buah, sayur, dan daging dengan komposisi protein, vitamin, dan mineral yang lengkap, sudah tersedia dalam satu pilihan.</p>
+              <div class="container">
+                <div class="item">
+                  <button class="kurang">-</button>
+                  <span class="angka">0</span>
+                  <button class="tambah">+</button>
+                </div>
+              </div>
+              <button onclick="changeColor37()" id="change37" class="change-button" type="submit" title="select">Select</button>
+            </div>
+
+            <div class="product" id="grocery">
+              <div class="level">Bundle Complete B</div>
+              <img src="assets/products/bundlekomplit2.jpg" alt="Bundle Complete B">
+              <h2>Rp 255.000/kg</h2>
+              <p>Berisi paket complete: buah, sayur, dan daging dengan komposisi protein, vitamin, dan mineral yang lengkap, sudah tersedia dalam satu pilihan.</p>
+              <div class="container">
+                <div class="item">
+                  <button class="kurang">-</button>
+                  <span class="angka">0</span>
+                  <button class="tambah">+</button>
+                </div>
+              </div>
+              <button onclick="changeColor38()" id="change38" class="change-button" type="submit" title="select">Select</button>
+            </div>
+          </section>
+
+        <section id="callus" class="closing">
+            <h1>Dapatkan kebutuhan rumah yang sudah terjamin kualitasnya secara online!</h1>
+            <p>Fresh N Fast adalah portal layanan belanja kebutuhan rumah online yang menyediakan produk berkualitas dari para petani lokal maupun impor. Sekarang tidak perlu lagi repot-repot mengantri, pergi ke toko yang padat, dan dilanda kemacetan. Cukup dengan handphone yang kamu punya sudah bisa berbelanja secara online dengan harga yang terjangkau!</p>
+            <a id="submit2" target="_blank">PESAN SEKARANG</a>
+        </section>
+    </main>
+
+    <!-- Membuat halaman footer -->
+    <footer>
+        <div class="footer1">
+          <img id="imgfooter" src="assets/logo.png" alt="RevoU">
+          <p>Jalan R. A. Kartini Raya No. 15 RT. 10/RW. 25,
+            <br>Kel. Pejaten Timur, Kec. Pejaten,
+            <br>Kota Admn. Jakarta Selatan, DKI Jakarta
+          </p>
+        </div>
+        <div class="footer2">
+          <span>0812-3456-7890
+            <img src="assets/mobile-solid.svg" alt="WhatsApp" width="15px" height="15px">
+          </span>
+          <span>021-5821-2912
+            <img src="assets/square-phone-flip-solid.svg" alt="Phone" width="15px" height="15px">
+          </span>
+          <span>freshnfast@gmail.com
+            <img src="assets/email_icon.svg" alt="Email" width="15px" height="15px">
+          </span>
+          <span>@freshnfast.id
+            <img src="assets/instagram-seeklogo.com.svg" alt="Instagram" width="15px" height="15px">
+          </span>
+          <div class="flexrow">
+            <p>Terms of Service</p>
+            <p>Privacy Policy</p> 
+            <p>&copy; 2023
+              <span>Fresh N Fast
+            </p>
+          </div>
+        </div>
+    </footer>
+
+    <script src="js/welcomeText.js"></script>
+    <script src="js/formvalidate1.js"></script>
+    <script src="js/banner.js"></script>
+    <script src="js/changeButtonColor.js"></script>
+    <script src="js/clickButton.js"></script>
+</body>
+</html>
